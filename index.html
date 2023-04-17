@@ -1,93 +1,272 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-   <head>
-      <title>Conference</title>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-      <link rel="stylesheet" href="assets/css/main.css" />
-   </head>
-   <body class="is-preload">
-      <!-- Header -->
-      <div id="header">
-         <div class="top">
-            <!-- Logo -->
-            <div id="logo">
-               <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-               <h1 id="title">Conference</h1>
-               <p>UDM</p>
-            </div>
-            <!-- Nav -->
-            <nav id="nav">
-               <ul>
-                  <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-				  <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Us</span></a></li>
-				  <li><a href="#speakers" id="speakers-link"><span class="icon solid fa-th">Speakers</span></a></li>
-				  <li><a href="#accommodation" id="accommodation-link"><span class="icon solid fa-envelope">Accommodation</span></a></li>
-                  <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-               </ul>
-            </nav>
-         </div>
-         <div class="bottom">
-            <!-- Social Icons -->
-            <ul class="icons">
-               <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-               <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-               <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-               <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-               <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+  <head>
+    <title>Conference</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__navbar">
+        <!-- Menu -->
+        <nav class="navbar">
+          <div class="navbar__brand">Conference</div>
+          <div class="navbar__list">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#speakers">Speakers</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#contact">Contact Us</a></li>
             </ul>
-         </div>
+          </div>
+        </nav>
       </div>
-      <!-- Main -->
-      <div id="main">
-         <!-- Intro -->
-         <section id="top" class="one dark cover">
-            <div class="container">
-               <header>
-                  <h2 class="alt">Conference</h2>
+      <!-- Slider -->
+      <div id="home" class="header__image">Business Conference</div>
+    </header>
+    <div class="wrapper">
+      <!-- About -->
+      <article id="about" class="wrapper__about">
+        <h1>About the <span class="wrapper_title">naming</span></h1>
+        <p class="wrapper_para">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </article>
+      <!-- Speaker -->
+      <section id="speakers" class="wrapper__speakers">
+        <h1>The <span class="wrapper_title">speakers</span></h1>
+        <div class="row">
+          <div class="column">
+            <div class="column__content">
+              <div class="image">
+                <img
+                  class="image__img"
+                  src="images/speakers/s1.jpg"
+                  alt="Bricks"
+                />
+                <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">MAXINE HUGES</div>
+                  <p class="image__description">EXPRESS</p>
+                </div>
+              </div>
             </div>
-         </section>
-		 <!-- About Us -->
-         <section id="about" class="three">
-            <div class="container">
-               <header>
-                  <h2>About Us</h2>
-               </header>
+          </div>
+          <div class="column">
+            <div class="column__content">
+              <div class="image">
+                <img
+                  class="image__img"
+                  src="images/speakers/s2.jpg"
+                  alt="Bricks"
+                />
+                <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">JOANA TIF</div>
+                  <p class="image__description">ICE</p>
+                </div>
+              </div>
             </div>
-         </section>
-		 
-         <!-- Speakers -->
-         <section id="speakers" class="two">
-            <div class="container">
-               <header>
-                  <h2>Speakers</h2>
-               </header>
+          </div>
+          <div class="column">
+            <div class="column__content">
+              <div class="image">
+                <img
+                  class="image__img"
+                  src="images/speakers/s3.jpg"
+                  alt="Bricks"
+                />
+                <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">RACHEL MOORE</div>
+                  <p class="image__description">WAWA.OG</p>
+                </div>
+              </div>
             </div>
-         </section>
-		 <!-- Accommodation -->
-         <section id="accommodation" class="two">
-            <div class="container">
-               <header>
-                  <h2>Accommodation</h2>
-               </header>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="column">
+            <div class="column__content">Some Text in Column One</div>
+          </div>
+          <div class="column">
+            <div class="column__content">Some Text in Column Two</div>
+          </div>
+        </div> -->
+      </section>
+      <!-- Schedule -->
+      <article id="schedule" class="wrapper__schedule">
+        <h1 class="wrapper__schedule__title">Schedule</h1>
+        <div class="row">
+          <div class="column">
+            <div class="column__content">
+              <h3><span class="wrapper_title">AM</span></h2>
             </div>
-         </section>
-         
-         <!-- Contact -->
-         <section id="contact" class="four">
-            <div class="container">
-               <header>
-                  <h2>Contact</h2>
-               </header>
+            <div class="column__content">
+              <div class="row row_space">
+                <div class="column">
+                  <div class="row">
+                    <div class="wrapper__schedule__time">09:15</div>
+                    <div class="wrapper__schedule__where">
+                      Maxine Hughes: <br />Businesses that Shine
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row_space">
+                <div class="column">
+                  <div class="row">
+                    <div class="wrapper__schedule__time">10:00</div>
+                    <div class="wrapper__schedule__where">
+                      Networking <br />Break
+                    </div>
+                  </div>
+                </div>                
+              </div>
+              <div class="row row_space">
+                <div class="column">
+                  <div class="row">
+                    <div class="wrapper__schedule__time">10:45</div>
+                    <div class="wrapper__schedule__where">
+                      Joan Seymour: <br />The Multitasking Myth
+                    </div>
+                  </div>
+                </div>                
+              </div>
+              <div class="row row_space">
+                <div class="column">
+                  <div class="row">
+                    <div class="wrapper__schedule__time">11:30</div>
+                    <div class="wrapper__schedule__where">
+                      Lunch Break
+                    </div>
+                  </div>
+                </div>                
+              </div>
             </div>
-         </section>
-      </div>
+          </div>
+          <div class="column">
+            <div class="column__content">
+              <h3><span class="wrapper_title">PM</span></h2>
+            </div>
+            <div class="column__content">
+              <div class="row row_space">
+                <div class="column">
+                  <div class="row">
+                    <div class="wrapper__schedule__time">14:00</div>
+                    <div class="wrapper__schedule__where">
+                      Rachel Moore: <br />From Associate to CEO
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row_space">
+                <div class="column">
+                  <div class="row">
+                    <div class="wrapper__schedule__time">15:30</div>
+                    <div class="wrapper__schedule__where">
+                      Hillary Getter: <br />The Wonder Women of Tech
+                    </div>
+                  </div>
+                </div>                
+              </div>
+              <div class="row row_space">
+                <div class="column">
+                  <div class="row">
+                    <div class="wrapper__schedule__time">16:00</div>
+                    <div class="wrapper__schedule__where">
+                      Closing Remarks
+                    </div>
+                  </div>
+                </div>                
+              </div>
+              <div class="row row_space">
+                <div class="column">
+                  <div class="row">
+                    <div class="wrapper__schedule__time">18:00</div>
+                    <div class="wrapper__schedule__where">
+                      Cocktails & Party!
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Contact Us -->
+      <section id="contact" class="wrapper__contact">
+        <div class="row">
+          <div class="column">
+            <div class="column__content">
+              <div class="contact-box">
+                <div class="contact-box__right">
+                  <h2>Contact <span class="wrapper_title">Us</span></h2>
+                  <input
+                    type="text"
+                    class="contact-box__field"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    type="text"
+                    class="contact-box__field"
+                    placeholder="Your Email"
+                  />
+                  <textarea
+                    placeholder="Message"
+                    class="contact-box__field"
+                  ></textarea>
+                  <button class="contact-box__btn">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column__content column__blue">
+              <div class="contact-info">
+                <div class="contact-info__right contact-info__text-left">
+                  <h2>Venue</h2>
+                  <h3>Université des Mascareignes</h3>
+                  <h4>Beau Plan, B18, Pamplemousses, Mauritius</h4>
+                  <p class="contact-info__para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem reiciendis incidunt accusantium porro amet
+                    repellendus hic corporis fugiat officiis, sequi iste
+                    distinctio possimus dignissimos, veniam quae delectus. Fuga,
+                    modi, perferendis!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Map -->
+      <section class="wrapper__map">
+        <!-- Google Map Copied Code -->
+        <iframe
+          src="https://maps.google.com/maps?q=Universit%C3%A9%20des%20Mascareignes,%20Pamplemousses%20Campus.%20Faculty%20of%20Business,%20Management%20and%20ICT.&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        >
+        </iframe>
+      </section>
       <!-- Footer -->
-      <div id="footer">
-         <!-- Copyright -->
-         <ul class="copyright">
-            <li>Copyright &copy; 2022 – All rights reserved.</li>
-         </ul>
-      </div>
-   </body>
+      <footer class="footer">© Copyright 2023. All rights reserved.</footer>
+    </div>
+    <!-- Float button to go at top of the page -->
+    <button onclick="topFunction()" id="toppage" title="Go to top">Top</button>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

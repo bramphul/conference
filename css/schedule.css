@@ -1,0 +1,29 @@
+#schedule {
+  padding: 0 0 5%;
+}
+
+.row_space {
+  padding: 20px 0 20px;
+}
+
+.wrapper__schedule__title {
+  padding: 5% 0;
+  margin: 0 auto;
+}
+
+.wrapper__schedule__time {
+  line-height: 1.2em;
+  text-align: right;
+  font-size: 45px;
+  margin: 0 40px 0 auto;
+  padding: 0;
+  width: 120px;
+}
+
+.wrapper__schedule__where {
+  font-size: 16px;
+  padding: 5px 0;
+  text-align: left;
+  margin: auto 0;
+  width: 50%;
+}
